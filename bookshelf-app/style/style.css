@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form label {
+  flex-basis: 30%;
+  font-weight: bold;
+}
+
+form input[type="text"], 
+form input[type="number"] {
+  flex-basis: 65%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+.container {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.container-header {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.book-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner {
+  flex-grow: 1;
+}
+
+h3 {
+  margin: 0 0 10px;
+  color: #4CAF50;
+}
+
+p {
+  margin: 5px 0;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[data-testid="bookItemNotCompleteButton"] {
+  background-color: #00BCD4;
+  color: white;
+}
+
+button[data-testid="bookItemNotCompleteButton"]:hover {
+  background-color: #0097A7;
+}
+
+button[data-testid="bookItemIsCompleteButton"] {
+  background-color: #FF9800;
+  color: white;
+}
+
+button[data-testid="bookItemIsCompleteButton"]:hover {
+  background-color: #FB8C00;
+}
+
+button[data-testid="bookItemDeleteButton"] {
+  background-color: #f44336;
+  color: white;
+}
+
+button[data-testid="bookItemDeleteButton"]:hover {
+  background-color: #e53935;
+}
